@@ -1,8 +1,9 @@
 import React,{useState} from 'react'
-import {Paper, Typography, Button, useMediaQuery} from '@material-ui/core';
+import {Paper, Button, useMediaQuery} from '@material-ui/core';
 import {makeStyles, useTheme} from '@material-ui/core/styles';
 import {Rating} from '@material-ui/lab';
 import {CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, Select} from '@material-ui/core';
+import useStyles from './styles';
 
 const List = () => {
   const classes = useStyles();
@@ -31,7 +32,7 @@ const List = () => {
           <MenuItem value={3}>Above 3.0</MenuItem>
           <MenuItem value={4}>Above 4.0</MenuItem>
           <MenuItem value={4.5}>Above 4.5</MenuItem>
-          
+
         </Select>
       </FormControl>
 
