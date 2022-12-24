@@ -3,8 +3,9 @@ import './App.css';
 import React from 'react';
 import {CssBaseline, Grid} from '@material-ui/core';
 import Header from './components/Header/Header';
-import List from './components/List/List';
+import List from './components/Lists/List';
 import Map from './components/Map/Map';
+import PlaceDetails from './components/PlaceDetails/PlaceDetails';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             <Map />
           </Grid>
         </Grid>
-        
+
         
     </>
   );
